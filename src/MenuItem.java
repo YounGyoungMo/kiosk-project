@@ -1,5 +1,3 @@
-import java.awt.*;
-
 public class MenuItem {
     private String name;
     private double price;
@@ -22,5 +20,4 @@ public class MenuItem {
     public String getDescription() {
         return this.description;
     }
-
 }
