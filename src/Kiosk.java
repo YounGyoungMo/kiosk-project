@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 public class Kiosk {
     private List<MenuItem> menuItems = new ArrayList<>();
-
+    
+    // Kiosk 생성자 생성
     Kiosk(List<MenuItem> menuItems) {
         this.menuItems = menuItems;
     }
-
+    
     public void start() {
 
         Scanner scanner = new Scanner(System.in);
@@ -19,6 +20,7 @@ public class Kiosk {
             int num = 1;
 
             System.out.println("[ SHAKESHACK MENU ]");
+            // 반복문을 통한 메뉴 출력
             for (MenuItem menu : menuItems) {
                 System.out.println(num++ + ". " + menu.getName() + "| W " + menu.getPrice() + " | " + menu.getDescription());
             }

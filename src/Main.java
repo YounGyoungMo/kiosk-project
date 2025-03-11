@@ -18,4 +18,5 @@ public class Main {
         // Kiosk 객체 생성
         Kiosk kiosk = new Kiosk(menuItems);
         kiosk.start();
+    }
 }
