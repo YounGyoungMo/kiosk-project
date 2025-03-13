@@ -22,15 +22,14 @@ public class Drinks extends MenuItem {
         return super.getDescription();
     }
 
-    public static void printDrinksMenu(Menu drinksMenu) {
-        System.out.println("[ BURGERS MENU ]");
-        drinksMenu.printMenuItems();
-        System.out.println("0. 뒤로가기");
-    }
-
     @Override
     public void selectMenu(int number2, List<MenuItem> menuItems) {
         super.selectMenu(number2, menuItems);
     }
 
+    public static void printDrinksMenu(Menu drinksMenu) {
+        System.out.println("[ BURGERS MENU ]");
+        drinksMenu.printMenuItems();
+        System.out.println("0. 뒤로가기");
+    }
 }

@@ -22,15 +22,15 @@ public class Dessert extends MenuItem {
         return super.getDescription();
     }
 
+    @Override
+    public void selectMenu(int number2, List<MenuItem> menuItems) {
+        super.selectMenu(number2, menuItems);
+    }
+
     public static void printDessertMenu(Menu dessertsMenu) {
         System.out.println("[ DESSERTS MENU ]");
         dessertsMenu.printMenuItems();
         System.out.println("0. 뒤로가기");
-    }
-
-    @Override
-    public void selectMenu(int number2, List<MenuItem> menuItems) {
-        super.selectMenu(number2, menuItems);
     }
 
 }
