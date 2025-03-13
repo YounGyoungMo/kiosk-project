@@ -1,3 +1,5 @@
+
+
 public class Main {
     public static void main(String[] args) {
 
@@ -5,5 +7,6 @@ public class Main {
         Kiosk kiosk = new Kiosk();
         kiosk.start();
 
+        
     }
 }
